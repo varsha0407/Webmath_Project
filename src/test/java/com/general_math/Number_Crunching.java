@@ -41,7 +41,7 @@ public class Number_Crunching {
                     String name9 = p.getProperty("name9");
                     String expression = p.getProperty("expression");
                     String numberCrunchBtn = p.getProperty("numbercrunchBtn");
-                    String id = p.getProperty("id");
+                    String iD = p.getProperty("id");
                     String perform_The_Final_Evaluation = p.getProperty("perform_the_final_evaluation");
 					
 					d.get(url);
@@ -85,7 +85,7 @@ public class Number_Crunching {
 					d.findElement(By.xpath(numberCrunchBtn)).click();
 					Thread.sleep(1000);
 					
-					d.switchTo().frame(id);
+					d.switchTo().frame(iD);
 					Thread.sleep(1000);
 					
 				 d.findElement(By.linkText(perform_The_Final_Evaluation)).click();
